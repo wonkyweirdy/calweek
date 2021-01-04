@@ -2,7 +2,7 @@ import calendar
 from datetime import date, timedelta
 from collections import namedtuple
 
-__version__ = (0, 4, 0)
+__version__ = (0, 4, 1)
 
 
 import sys
