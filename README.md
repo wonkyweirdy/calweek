@@ -16,7 +16,7 @@ For ISO 8601 week support in Python, use the
 module on which this code was based.
 
 The *CalWeek* instances are light weight and immutable with an interface similar
-to the datetime.date objects.  Example code::
+to the datetime.date objects.  Example code:
 
     from calweek import CalWeek
     w = CalWeek(2011, 20)
@@ -24,7 +24,6 @@ to the datetime.date objects.  Example code::
 
     print "Current week number is", CalWeek.thisweek().week
     print "Next week is", CalWeek.thisweek() + 1
-
 
 weeknum() function
 ==================

@@ -15,7 +15,8 @@ setup(
     url='http://github.com/wonkyweirdy/calweek',
     py_modules=['calweek'],
     license='BSD',
-    long_description=open("README.rst").read(),
+    long_description=open("README.md").read(),
+    long_description_content_type='text/markdown',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
