@@ -2,7 +2,7 @@ import calendar
 from datetime import date, timedelta
 from collections import namedtuple
 
-__version__ = (0, 4, 2)
+__version__ = (0, 5, 0)
 
 
 import sys
@@ -149,7 +149,7 @@ class CalWeek(namedtuple('CalWeek', ('year', 'week'))):
 
     def last_day(self):
         """Return the last day of the week as a date object"""
-        return self.day(6)
+        return self.day(self.day_count() - 1)
 
     def day_count(self):
         """Return the number of days in this week."""

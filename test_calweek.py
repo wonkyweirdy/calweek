@@ -109,6 +109,13 @@ class TestCalWeek(unittest.TestCase):
         self.assertTrue(w.contains(date(2011,5,14)))
         self.assertFalse(w.contains(date(2011,5,15)))
 
+    def test_year_boundary_days(self):
+        w = CalWeek(2020, 53)
+        self.assertEqual(w.last_day().isoformat(), '2020-12-31')
+
+        w = CalWeek(2021, 1)
+        self.assertEqual(w.last_day().isoformat(), '2021-01-02')
+
     def test_arithmetics(self):
         w = CalWeek(2011, 20)
         self.assertEqual(str(w + 0),   "2011W20")

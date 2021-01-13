@@ -8,7 +8,7 @@ from setuptools import setup
 
 setup(
     name = 'calweek',
-    version = '0.4.2',
+    version = '0.5.0',
     description = 'Objects representing a (non-ISO) week',
     author='Ray Burr',
     author_email='ryb@nightmare.com',
